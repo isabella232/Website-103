@@ -255,8 +255,6 @@ svg {
 --------------------------------------------------------------*/
 
 .ui-component-button {
-  border: .0625rem solid var(--ui-color-brand);
-  border-radius: var(--ui-radius-button);
   display: block;
   font-weight: 700;
   line-height: 1;
@@ -265,7 +263,16 @@ svg {
 }
 
 .ui-component-button-primary {
+  border-radius: var(--ui-radius-button);
+  border: .0625rem solid var(--ui-color-brand);
   background-color: var(--ui-color-brand);
+  color: var(--ui-color-typography-button);
+}
+
+.ui-component-button-development {
+  border-radius: .5rem;
+  border: .0625rem solid #0079bf;
+  background-color: #0079bf;
   color: var(--ui-color-typography-button);
 }
 
@@ -351,6 +358,17 @@ div label[for=ui-component-toggle__yearly] {
   background-size: 1.125rem;
   list-style: none;
   padding-left: 1.875rem;
+}
+
+.ui-component-list--item-bullet {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 1.125rem;
+  margin-left: 1.5rem;
+}
+
+.ui-component-list--item-indent-lv1 {
+  margin-left: 4rem;
 }
 
 .ui-component-list--item-check {
@@ -524,6 +542,10 @@ div label[for=ui-component-toggle__yearly] {
 }
 
 .ui-section-feature__layout:last-of-type { margin-top: 5rem; }
+
+.ui-section-feature-center {
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 |
