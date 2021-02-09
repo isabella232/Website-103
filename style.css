@@ -992,7 +992,7 @@ tr.coming-soon:after {
     align-items: center;
     column-gap: var(--ui-gap-cta);
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
   }
 
 }
