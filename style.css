@@ -202,6 +202,14 @@ small { font-size: var(--ui-typography-s); }
   font-style: italic;
 }
 
+.hover-border {
+  border: .3rem solid transparent;
+}
+
+.hover-border:hover {
+  border: .3rem solid var(--ui-color-brand);
+}
+
 /*--------------------------------------------------------------
 4.0 IMAGE
 --------------------------------------------------------------*/
@@ -351,7 +359,6 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-component-card {
-  border: .5rem solid transparent;
   border-radius: var(--ui-radius-card);
   background-color: white;
   padding: 50px;
@@ -359,10 +366,6 @@ div label[for=ui-component-toggle__yearly] {
   overflow: hidden;
   width: 30rem;
   height: 28rem;
-}
-
-.ui-component-card:hover {
-  border: .5rem solid var(--ui-color-brand);
 }
 
 .ui-component-card h3,p {
@@ -732,6 +735,38 @@ tr.coming-soon:after {
   z-index: 1;
   position: absolute;
   transform: translate(-230px, 5px);
+}
+
+/*--------------------------------------------------------------
+|
+| 7.10 DONATION
+|
+--------------------------------------------------------------*/
+
+.pill-button {
+  width: fit-content;
+  background-color: white;
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: xx-large;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+  vertical-align: middle;
+}
+
+.pill-button * {
+  color: black;
+  margin: auto;
+}
+
+.img-button {
+  display: inline-block;
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------
