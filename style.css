@@ -43,6 +43,7 @@ TABLE OF CONTENT
   ------------------------------------------------------------*/
 
   --ui-color-brand: #303F9F;
+  --ui-link-color: #5b70ff;
 
   /* COLOR PALETTE */
 
@@ -155,8 +156,8 @@ body {
 --------------------------------------------------------------*/
 
 a {
-  color: var(--ui-color-brand);
-  text-decoration-color: var(--ui-color-typography-note);
+  color: var(--ui-link-color);
+  text-decoration-color: var(--ui-link-color);
 }
 
 h1,
@@ -767,6 +768,22 @@ tr.coming-soon:after {
 .img-button {
   display: inline-block;
   cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+|
+| 7.10 PRIVACY POLICY
+|
+--------------------------------------------------------------*/
+
+.privacy-policy :not(.privacy-policy-section):not(a)  {
+  text-align: left; 
+  margin: 1rem 1rem;
+}
+
+.privacy-policy-section {
+  text-align: left; 
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
