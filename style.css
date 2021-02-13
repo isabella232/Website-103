@@ -369,8 +369,9 @@ div label[for=ui-component-toggle__yearly] {
   height: 28rem;
 }
 
-.ui-component-card h3,p {
+.ui-component-card h3,p,a {
   text-align: center;
+  text-decoration: none;
 }
 
 
