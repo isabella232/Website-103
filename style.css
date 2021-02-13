@@ -776,9 +776,14 @@ tr.coming-soon:after {
 |
 --------------------------------------------------------------*/
 
-.privacy-policy :not(.privacy-policy-section):not(a)  {
+.privacy-policy :not(.privacy-policy-section):not(a):not(ul)  {
   text-align: left; 
   margin: 1rem 1rem;
+}
+
+.privacy-policy ul {
+  text-align: left; 
+  margin-left: 3rem;
 }
 
 .privacy-policy-section {
