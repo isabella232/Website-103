@@ -185,6 +185,7 @@ p,
 ul { margin-bottom: var(--ui-typography-margin-body); }
 
 p.spacer{
+  display: none;
   margin-bottom: 0;
 }
 
@@ -451,7 +452,7 @@ div label[for=ui-component-toggle__yearly] {
 
 .ui-section-header--menu-icon::before,
 .ui-section-header--menu-icon::after {
-  background: var(--ui-color-brand);
+  background: white;
   content: "";
   height: .125rem;
   left: 0;
@@ -544,13 +545,19 @@ div label[for=ui-component-toggle__yearly] {
 |
 --------------------------------------------------------------*/
 
+.ui-section-customer {
+  background-color: var(--ui-color-background-secondary);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
 .ui-section-customer__layout {
   flex-direction: column;
   row-gap: var(--ui-gap-customer);
 }
 
 .ui-section-customer--logo {
-  height: 1.5rem;
+  height: 3rem;
   width: auto;
 }
 
@@ -715,28 +722,8 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 table.downloads {
-  border-spacing: 2rem 1rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-tr.coming-soon .ui-component-button {
-  -webkit-filter: blur(.15rem);
-  -moz-filter: blur(.15rem);
-  -o-filter: blur(.15rem);
-  -ms-filter: blur(.15rem);
-  filter: blur(.15rem);
-}
-
-tr.coming-soon:after {
-  content: "Coming soon!";
-  color: #fff;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-style: italic;
-  font-weight: bold;
-  z-index: 1;
-  position: absolute;
-  transform: translate(-230px, 5px);
 }
 
 /*--------------------------------------------------------------
@@ -956,7 +943,6 @@ tr.coming-soon:after {
   ------------------------------------------------------------*/
 
   .ui-section-customer{
-    background-color: var(--ui-color-background-secondary);
     padding-bottom: 5rem;
     padding-top: 5rem;
   }
@@ -1144,6 +1130,10 @@ tr.coming-soon:after {
 
   .ui-section-header { padding-top: 3rem; }
 
+  p.spacer {
+    display: block;
+  }
+
   /*------------------------------------------------------------
   |
   | HERO
@@ -1160,8 +1150,6 @@ tr.coming-soon:after {
   | CUSTOMER
   |
   ------------------------------------------------------------*/
-
-  .ui-section-customer--logo { height: 3rem; }
   
   .ui-section-customer--logo-str { height: 2.25rem; }
   
@@ -1211,6 +1199,16 @@ tr.coming-soon:after {
   .ui-section-testimonial {
     padding-bottom: 7.5rem;
     padding-top: 7.5rem;
+  }
+
+  /*------------------------------------------------------------
+  |
+  | DOWNLOADS
+  |
+  ------------------------------------------------------------*/
+
+  table.downloads {
+    border-spacing: 2rem 1rem;
   }
 
   /*------------------------------------------------------------
