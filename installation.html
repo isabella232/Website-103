@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="uisual" content="Made with Uisual (uisual.com)">
     <meta name="author" content="Derek Antrican">
-    <meta name="description" content="Removing duplicates, managing work schedules, and keeping track of projects: what people most commonly do with Bulk Edit Calendar Events">
+    <meta name="description" content="Historical downloads of Bulk Edit Calendar Events">
     <meta name="referrer" content="unsafe-url">
     <meta name="robots" content="index, follow">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -16,12 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="me" href="https://github.com/derekantrican">
-    <link rel="canonical" href="https://bulkeditcalendarevents.com/usecases.html">
+    <link rel="canonical" href="https://bulkeditcalendarevents.com/downloads.html">
     <link rel="icon" type="image/png" href="images/icon.png" sizes="48x48">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <link rel="preload" as="style" href="style.css">
     <link rel="stylesheet" href="style.css">
-    <title>Bulk Edit Calendar Events - Use cases</title>
+    <title>Bulk Edit Calendar Events - Downloads</title>
   </head>
   <body>
     <header role="banner" class="ui-section-header">
@@ -49,39 +49,22 @@
     <main role="main">
       <section class="ui-section-feature">
         <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <img src="images/usecases/duplicates.png" alt="#" class="ui-image-half-left">
-            <div>
-              <h2>Removing Duplicates</h2>
-              <p class="ui-text-intro">Whether it's from a corrupted sync or an accidental copy, duplicate events happen all the time. Using the search & filter features you can quickly nail down events by time, title, location, & more to select them for cleanup (with even more automated finding of duplicate events coming in the future)</p>
-            </div>
+          <div class="ui-section-feature__layout left-aligned">
+            <h2>Installation instructions</h2>
+            <p>
+                <i>Your download will begin shortly...</i><br>
+                <br>
+                Thanks for downloading Bulk Edit Calendar Events! Please read the note below for installing on Windows.<br>
+                <br>
+                After downloading and launching the .exe, you will likely be presented with a Windows SmartScreen warning like below. This does not indicate that the program 
+                is dangerous, just that not enough users have installed it for Windows to "recognize" it.<br>
+                <br>
+                Click "More Info", then click "Run Anyway"
+            </p>
           </div>
-        </div>
-        <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <div>
-              <h2>Managing work & class schedules</h2>
-              <p class="ui-text-intro">When you've got a lot of different shifts/classes to manage, it's a pain to edit every one. What if you decide to swap to the Tuesday class? What if you are working remotely and you change timezones? What if you want to add an extra hour to all of Paul's shifts? Bulk Edit Calendar Events helps you quickly manage all these scenarios and more with a couple clicks</p>
-            </div>
-              <img src="images/usecases/shifts.png" alt="#" class="ui-image-half-right">
-          </div>
-        </div>
-        <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <img src="images/usecases/tasks.png" alt="#" class="ui-image-half-left">
-            <div>
-              <h2>Keeping track of projects & tasks</h2>
-              <p class="ui-text-intro">Maybe you're one of those people who keeps their todos & tasks in their calendar. Anything uncompleted, you might want to move to the next day (or even the next week). Not only is this simple and easy in Bulk Edit Calendar Events, but coming soon you can even automate the process by scheduling edits to happen automatically</p>
-            </div>
-          </div>
-        </div>
-        <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <div>
-              <h2>Creating a schedule</h2>
-              <p class="ui-text-intro">If you just started a new semester at school, you can know what a pain it can be to log all those events on your calendar. You could make them recurring events, but then one edit could affect them all. The Creator tool makes this easy with sentence phrasing (eg "every Tuesday and Thursday at 11am") and the Model Week creator lets you plan one week and copy it to a bunch of others.</p>
-            </div>
-            <img src="images/usecases/classes.png" alt="#" class="ui-image-half-right">
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2" style="margin-top: 0;">
+            <img src="images\install\smart-screen-1.png"/>
+            <img src="images\install\smart-screen-2.png"/>
           </div>
         </div>
       </section>
@@ -137,6 +120,7 @@
   </body>
   <script>
     $.getJSON('https://script.google.com/macros/s/AKfycbyfDh45rYjTtqF_62beTfnOm8vg2Whfi4pXHXPj08TMlvkaILgJ/exec?website', function(data) {
+      window.location = data["updateWin"]["url"];
       $(".latestWindows").attr("href", "installation.html");
       $(".latestMacOS").attr("href", data["updateMac"]["url"]);
     });

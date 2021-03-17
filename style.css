@@ -763,17 +763,17 @@ table.downloads {
 |
 --------------------------------------------------------------*/
 
-.privacy-policy :not(.privacy-policy-section):not(a):not(ul)  {
+.left-aligned :not(.left-aligned-section):not(a):not(ul)  {
   text-align: left; 
   margin: 1rem 1rem;
 }
 
-.privacy-policy ul {
+.left-aligned ul {
   text-align: left; 
   margin-left: 3rem;
 }
 
-.privacy-policy-section {
+.left-aligned-section {
   text-align: left; 
   text-decoration: underline;
 }
