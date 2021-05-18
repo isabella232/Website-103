@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="me" href="https://github.com/derekantrican">
-    <link rel="canonical" href="https://bulkeditcalendarevents.com/usecases.html">
+    <link rel="canonical" href="https://bulkeditcalendarevents.com/privacypolicyhtml">
     <link rel="icon" type="image/png" href="images/icon.png" sizes="48x48">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <link rel="preload" as="style" href="style.css">
@@ -24,8 +24,8 @@
   </head>
   <body>
     <a href="defender.html">
-      <div style="background-color: red; display: block; text-align: center; color: white; padding: .5rem;">Windows Defender is currently flagging Bulk Edit Calendar Events v6.0 as malware. Click here for details and to download a fix.</div>
-    </a>
+        <div style="background-color: red; display: block; text-align: center; color: white; padding: .5rem;">Windows Defender is currently flagging Bulk Edit Calendar Events v6.0 as malware. Click here for details and to download a fix.</div>
+      </a>
     <header role="banner" class="ui-section-header">
       <div class="ui-layout-container">
         <div class="ui-section-header__layout ui-layout-flex">
@@ -50,41 +50,52 @@
     </header>
     <main role="main">
       <section class="ui-section-feature">
-        <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <img src="images/usecases/duplicates.png" alt="#" class="ui-image-half-left">
-            <div>
-              <h2>Removing Duplicates</h2>
-              <p class="ui-text-intro">Whether it's from a corrupted sync or an accidental copy, duplicate events happen all the time. Using the search & filter features you can quickly nail down events by time, title, location, & more to select them for cleanup (with even more automated finding of duplicate events coming in the future)</p>
-            </div>
-          </div>
-        </div>
-        <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <div>
-              <h2>Managing work & class schedules</h2>
-              <p class="ui-text-intro">When you've got a lot of different shifts/classes to manage, it's a pain to edit every one. What if you decide to swap to the Tuesday class? What if you are working remotely and you change timezones? What if you want to add an extra hour to all of Paul's shifts? Bulk Edit Calendar Events helps you quickly manage all these scenarios and more with a couple clicks</p>
-            </div>
-              <img src="images/usecases/shifts.png" alt="#" class="ui-image-half-right">
-          </div>
-        </div>
-        <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <img src="images/usecases/tasks.png" alt="#" class="ui-image-half-left">
-            <div>
-              <h2>Keeping track of projects & tasks</h2>
-              <p class="ui-text-intro">Maybe you're one of those people who keeps their todos & tasks in their calendar. Anything uncompleted, you might want to move to the next day (or even the next week). Not only is this simple and easy in Bulk Edit Calendar Events, but coming soon you can even automate the process by scheduling edits to happen automatically</p>
-            </div>
-          </div>
-        </div>
-        <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <div>
-              <h2>Creating a schedule</h2>
-              <p class="ui-text-intro">If you just started a new semester at school, you can know what a pain it can be to log all those events on your calendar. You could make them recurring events, but then one edit could affect them all. The Creator tool makes this easy with sentence phrasing (eg "every Tuesday and Thursday at 11am") and the Model Week creator lets you plan one week and copy it to a bunch of others.</p>
-            </div>
-            <img src="images/usecases/classes.png" alt="#" class="ui-image-half-right">
-          </div>
+        <div class="ui-layout-container privacy-policy">
+            <h2 style="text-align: center; margin-top: 5rem;">
+                Windows Defender misidentification (May 17, 2021)
+            </h2>
+            <h4 class="privacy-policy-section">
+                What happened?
+            </h4>
+            <p>
+                Somewhere between the evening of May 16th and the morning of May 17th, 2021, the Windows Defender definition of security risks was updated and it misidentified one of the critical libraries used by Bulk Edit Calendar Events as a Trojan virus.
+                This resulted in users being unable to launch Bulk Edit Calendar Events. Additionally, you may have seen a message like this:
+            </p>
+            <img src="images\screenshots\defender.png">
+            <p>
+                NOTE: since this is an issue with Windows Defender, this applies to Windows users only.
+            </p>
+            <h4 class="privacy-policy-section">
+                Is the application safe?
+            </h4>
+            <p>
+                First off: this is a misidentification. <b style="margin: 0;">Bulk Edit Calendar Events and the libraries that it uses are safe and virus-free.</b>
+            </p>
+            <p>
+                Secondly: <b style="margin: 0;">no information has been compromised</b>. Any data used by Bulk Edit Calendar Events is entirely safe and all analytic data is entirely anonymized.
+            </p>
+            <h4 class="privacy-policy-section">
+                What is being done?
+            </h4>
+            <p>
+                Version 6.0 of the application has been updated and re-uploaded. You can download it from <a href="https://bulk-edit-calendar-events.s3-us-west-2.amazonaws.com/Bulk%20Edit%20Calendar%20Events%20setup%20%5B6.0%5D.exe">here</a>.
+            </p>
+            <p>
+                I have also submitted the appropriate files to Microsoft and they are working on clearing the false positive from the defender definition (1 file has been cleared already). 
+                You can see some status updates on this where I am communicating with the maintainers of those files here: <a href="https://github.com/AvaloniaUI/Avalonia/issues/5937">https://github.com/AvaloniaUI/Avalonia/issues/5937</a>
+            </p>
+            <h4 class="privacy-policy-section">
+                What do I need to do?
+            </h4>
+            <p>
+                Re-download and re-install v6.0 from <a href="https://bulk-edit-calendar-events.s3-us-west-2.amazonaws.com/Bulk%20Edit%20Calendar%20Events%20setup%20%5B6.0%5D.exe">here</a>.
+            </p>
+            <p>
+                That's it! You should be good to go!
+            </p>
+            <p style="font-style: italic;">
+                Please let me know if you have any other feedback or questions by visiting our <a href="support.html">support page</a>!
+            </p>
         </div>
       </section>
       <section class="ui-section-close">
