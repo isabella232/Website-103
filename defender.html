@@ -57,8 +57,8 @@
                 What happened?
             </h4>
             <p>
-                Somewhere between the evening of May 16th and the morning of May 17th, 2021, the Windows Defender definition of security risks was updated and it misidentified one of the critical libraries used by Bulk Edit Calendar Events as a Trojan virus.
-                This resulted in users being unable to launch Bulk Edit Calendar Events. Additionally, you may have seen a message like this:
+                Somewhere between the evening of May 16th and the morning of May 17th, 2021, the Windows Defender definition of security risks was updated and it misidentified two of the critical libraries used by Bulk Edit Calendar Events as a Trojan virus.
+                As these libraries build the UI for the application, this resulted in users being unable to launch Bulk Edit Calendar Events. Additionally, you may have seen a message like this:
             </p>
             <img src="images\screenshots\defender.png">
             <p>
@@ -80,7 +80,8 @@
                 Version 6.0 of the application has been updated and re-uploaded. You can download it from <a href="https://bulk-edit-calendar-events.s3-us-west-2.amazonaws.com/Bulk%20Edit%20Calendar%20Events%20setup%20%5B6.0%5D.exe">here</a>.
             </p>
             <p>
-                I have also submitted the appropriate files to Microsoft and they are working on clearing the false positive from the defender definition (1 file has been cleared already). 
+                I have also submitted the appropriate files to Microsoft <s style="margin: 0;">and they are working on clearing the false positive from the defender definition</s> <i style="margin: 0;">both files have been cleared, but Windows Defender
+                may have removed the files from your computer (requiring you to redownload them) or it may still be warning you (requiring you to clear the Windows Defender cache)</i>. 
                 You can see some status updates on this where I am communicating with the maintainers of those files here: <a href="https://github.com/AvaloniaUI/Avalonia/issues/5937">https://github.com/AvaloniaUI/Avalonia/issues/5937</a>
             </p>
             <h4 class="privacy-policy-section">
